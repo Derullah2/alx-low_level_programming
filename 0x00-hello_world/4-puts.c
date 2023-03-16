@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
- * programming in c
- * main - main
- * Return: 0
+
+/**
+ * main - main entry
+ *  Retun: 0
  */
 int main(void)
 {
