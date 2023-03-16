@@ -9,8 +9,6 @@ int main(void)
 	float floatType;
 	double doubleType;
 	char charType;
-	long long int d;
-	printf("Size of int: %lu bytes\n", (unsigned long)sizeof(d));
 	printf("Size of int: %lu bytes\n", (unsigned long)sizeof(integerType));
 	printf("Size of float: %lu bytes\n", (unsigned long)sizeof(floatType));
 	printf("Size of double: %lu bytes\n", (unsigned long)sizeof(doubleType));
