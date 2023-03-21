@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - main entry
+ * main - this a main function
  *
  * Return: 0
  */
@@ -32,4 +32,6 @@ int main(void)
 			}
 		}
 	}
+	puchar("\n");
+	return(0);
 }
