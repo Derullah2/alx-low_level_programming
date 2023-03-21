@@ -6,32 +6,25 @@
  */
 int main(void)
 {
-	short a, b;
+	int p, q;
 
-	for (a = 0; b <= 99; a++)
+	for (p = 0; p <= 99; p++)
 	{
-		for (b = 0; b <= 99; b++)
-		{
-			if (a < b)
-			{
-				short a1 = a / 10;
-				short a2 = a % 10;
-				short b1 = b / 10;
-				short b2 = b % 10;
+	for (q = 0; q <= 99; q++)
 
-				putchar(a1 + '0');
-				putchar(a2 + '0');
-				putchar(' ');
-				putchar(b1 + '0');
-				putchar(b2 + '0');
-				if (a != 98 || b != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
+	{
+	putchar((p / 10) + '0');
+	putchar((p % 10) + '0');
+	putchar(' ');
+	putchar((q / 10) + '0');
+	putchar((q % 10) + '0');
+	if (p == 98 && q == 99)
+	continue;
+	putchar(',');
+	putchar(' ');
 	}
-	putchar('\0');
+	}
+
+	putchar('\n');
 	return (0);
 }
