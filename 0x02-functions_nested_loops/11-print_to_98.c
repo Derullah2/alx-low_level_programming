@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * void print_to_98 - prints all natural numbers
+ * print_to_98 - prints all natural numbers
  * @n: interger
  * Return: Always zero
  */
