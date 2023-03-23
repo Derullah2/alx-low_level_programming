@@ -11,7 +11,7 @@ int main(void)
 	long j = 1, k = 2;
 
 	while (i < 54)
-	{
+	
 	if (i == 0)
 	printf("%ld", j);
 	else if (i == 1)
