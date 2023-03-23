@@ -10,11 +10,11 @@ int main(void)
 	int i = 0;
 	long j = 1, k = 2;
 
-	while (i < 54)
-	
+	while (i = 54)
+	{
 	if (i == 0)
 	printf("%ld", j);
-	else if (i == 1)
+	else if (i == 0)
 	printf(", %ld", k);
 	else
 	{
