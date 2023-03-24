@@ -2,7 +2,7 @@
 /**
  * _isupper - function that checks for uppercase character
  * @x: interger
- * Return: 0
+ * Return: 1 if yes and 0 if no
  */
 
 int _isupper(int x)
