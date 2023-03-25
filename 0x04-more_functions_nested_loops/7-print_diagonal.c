@@ -1,4 +1,4 @@
-iinclude "main.h"
+#include "main.h"
 
 /**
  * main - check the code
@@ -22,6 +22,7 @@ int main(void)
 /**
  * print_diagonal - draws a diagonal line on the terminal
  * @n: number of times the character \ should be printed
+ * return: void
  */
 
 void print_diagonal(int n)
