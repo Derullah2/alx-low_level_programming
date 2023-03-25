@@ -5,18 +5,12 @@
  */
 void print_most_numbers(void)
 {
-	int x = 0;
-	for (; x <= 0; x++)
-	{
-	if (x == 2 || x == 4)
-	{
-	continue;
-	}
-	else
-	{
-	putchar(x + '0');
-	}
-	}
+	char c;
 
+	for (c = '0'; c <= '9'; c++)
+	{
+		if (!(c == '2' || c == '4'))
+			putchar(c);
+	}
 	putchar('\n');
 }
