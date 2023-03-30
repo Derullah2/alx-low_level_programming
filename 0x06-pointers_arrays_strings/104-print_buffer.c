@@ -7,7 +7,6 @@
  */
 void print_buffer(char *b, int size)
 {
-
 int o, j, i;
 o = 0;
 if (size <= 0)
@@ -46,6 +45,4 @@ o
 c
 = '.'; }printf("%c", c
 ); }printf("\n"); o += 10; }
-
-
 }
