@@ -1,12 +1,12 @@
-#inlcude "main.h"
+#include "main.h"
 /**
- * _strncpy - copies a string
- * @dest: destination
- * @src: string
- * @n: interger
- * Return: dest
- * Wrighten By Derullah
- */
+* _strncpy - copy a string
+* @dest: input value
+* @src: input value
+* @n: input value
+*
+* Return: dest
+*/
 char *_strncpy(char *dest, char *src, int n)
 {
 int j;
