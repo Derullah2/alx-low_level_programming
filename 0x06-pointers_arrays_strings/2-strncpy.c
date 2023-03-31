@@ -4,19 +4,22 @@
  * @dest: destination
  * @src: string
  * @n: interger
+ * Return: dest
  * Wrighten By Derullah
  */
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-int i;
-i = 0;
-while (s1[i] != '\0' && s2[i] != '\0')
+int j;
+j = 0;
+while (j < n && src[j] != '\0')
 {
-if (s1[i] != s2[i])
-{
-return (s1[i] - s2[i]);
+dest[j] = src[j];
+j++;
 }
-i++;
+while (j < n)
+{
+dest[j] = '\0';
+j++;
 }
-return (0);
+return (dest);
 }

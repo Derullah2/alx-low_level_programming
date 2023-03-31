@@ -1,10 +1,11 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
- * print_buffer - prints a buffer
- * @b_ character
- * Retrun - 0
- */
+* print_buffer - prints buffer
+* @b: buffer
+* @size: size
+* Return: void
+*/
 void print_buffer(char *b, int size)
 {
 int o, j, i;
