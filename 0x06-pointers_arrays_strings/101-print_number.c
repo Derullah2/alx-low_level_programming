@@ -1,7 +1,6 @@
 #include "main.h"
 /**
-* print_number - print numbers chars
-* @n: integer params
+* main - main entry
 * Return: 0
 */
 int main(void)
