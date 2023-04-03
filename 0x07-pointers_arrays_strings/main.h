@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <unistd.h>
+#ifndef MAIN_H
+#define MAIN_H
 
 void print_diagsums(int *a, int size);
 void print_chessboard(char (*a)[8]);
