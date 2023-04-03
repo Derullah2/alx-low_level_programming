@@ -5,6 +5,7 @@
  * @s: pointer s
  * @b: consatnt b
  * @n: fiorst memorry
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
