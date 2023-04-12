@@ -4,6 +4,7 @@
 int word_len(char *str);
 int count_words(char *str);
 char **strtow(char *str);
+
 /**
  * worl_len - words line
  * @str: string to be counted
@@ -32,8 +33,9 @@ int count_words(char *str)
 {
 	int index = 0, words = 0, len = 0;
 
-	for (index = 0; (str + index); index++)
+	for (index = 0; *(str + index); index++)
 		len++;
+
 	for (index = 0; index < len; index++)
 	{
 		if (*(str + index) != ' ')
@@ -43,7 +45,7 @@ int count_words(char *str)
 		}
 
 	}
-
+	return (words);
 
 }
 
@@ -60,36 +62,38 @@ char **strtow(char *str)
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
+
 	words = count_words(str);
 	if (words == 0)
 		return (NULL);
-	string = malloc(sizeof(char *) * (words +1));
+	string = malloc(sizeof(char *) * (words + 1));
 	if (string == NULL)
 		return (NULL);
 
 	for (w = 0; w < words; w++)
 	{
-		while (str(index) == ' ')
+		while (str[index] == ' ')
 			index++;
 
-		letters = word_len(*str + index);
+		letters = word_len(str + index);
 
-		strings[w] = malloc(sizeof(char) * (letters + 1));
+		string[w] = malloc(sizeof(char) * (letters + 1));
+
 		if (string[w] == NULL)
 		{
-		
+
 			for (; w >= 0; w--)
-				free(strings[w]);
+				free(string[w]);
 
 			free(string);
-			return (NULL);		
+			return (NULL);
 		}
 		for (l = 0; l < letters; l++)
 			string[w][l] = str[index++];
 
 		string[w][l] = '\0';
 	}
-	strings[w] = NULL;
+	string[w] = NULL;
 
 	return (string);
 
