@@ -6,7 +6,7 @@ int count_words(char *str);
 char **strtow(char *str);
 
 /**
- * worl_len - words line
+ * word_len - words line
  * @str: string to be counted
  * Return: index of the last words
  */
