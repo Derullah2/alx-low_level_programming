@@ -5,6 +5,7 @@
  * @width: string width
  * @height: string height
  * Return: NULL
+ * wrighten by rogat ewaddy
  */
 int **alloc_grid(int width, int height)
 {
