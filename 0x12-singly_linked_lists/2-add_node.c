@@ -29,15 +29,15 @@ list_t *add_node(list_t **head, const char *str)
 }
 
 /**
- * _strlen - prints out the  string lenths
- * @s: string to print on the program
+ * _stringlenth - prints out the  string lenths
+ * @d: string to print on the program
  * Return: strlen
  */
-int _stringlenth(const char *s)
+int _stringlenth(const char *d)
 {
 	int con;
 
-	for (con = 0; s[con]; con++)
+	for (con = 0; d[con]; con++)
 		;
 	return (con);
 }
