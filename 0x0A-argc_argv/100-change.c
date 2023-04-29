@@ -1,33 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * 
+ * main - main entry
+ * @argc:  arguments count
+ * @argv: arguments vector
+ * Return: 0 else 1
  */
 
+int main(int argc, char *argv[])
 
-int main(int argc, char *argv[]) {
-  if (argc != 2) {  // Check the number of arguments passed
-    printf("Error\n");
-    return 1;
-  }
+{
+	int amt, arg, baln;
+	int cents[] = {25, 10, 5, 2, 1};
 
-  int cents = atoi(argv[1]);  // Convert the argument to an integer
+	if (argc != 2)
 
-  if (cents < 0) {  // Check if the amount is negative
-    printf("0\n");
-    return 0;
-  }
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-  int coins[] = {25, 10, 5, 2, 1};  // Define the coins available
-  int num_coins = sizeof(coins) / sizeof(coins[0]);  // Calculate the number of coins available
-  int count = 0;  // Initialize the coin count
+	amt = atoi(argv[1]);
+	baln = 0;
 
-  for (int i = 0; i < num_coins; i++) {
-    count += cents / coins[i];  // Count the number of coins required
-    cents %= coins[i];  // Update the remaining amount of money
-  }
+	if (amt < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 
-  printf("%d\n", count);  // Print the minimum number of coins required
+	for (arg = 0; arg < 5 && amt >= 0; arg++)
+	{
+		while (amt >= cents[arg])
+		{
+			baln++;
+			amt -= cents[arg];
+		}
+	}
 
-  return 0;
+	printf("%d\n", baln);
+	return (0);
 }
