@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		total_sum = totalsum + atoi(numb2);
+		totalsum = totalsum + atoi(numb2);
 	}
 	printf("%d\n", totalsum);
 	return (0);
