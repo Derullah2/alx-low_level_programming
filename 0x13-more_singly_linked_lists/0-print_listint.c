@@ -6,7 +6,7 @@
 /**
  * print_listint - prints all the elements of a listint_t list in the program
  * @h: char to work with
- * Rerurn: the number of nodes
+ * Return: nodes
  */
 
 size_t print_listint(const listint_t *h)
