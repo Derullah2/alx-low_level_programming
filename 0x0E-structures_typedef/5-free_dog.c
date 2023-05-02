@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
-#include "dog.h"
+#include <stdlib.h>
 
 /**
  * free_dog - a function that frees memory allocated
