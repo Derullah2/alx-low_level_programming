@@ -12,28 +12,29 @@
 listint_t *find_listint_loop(listint_t *head)
 {
 
-listint_t *linkedloop = head;
-listint_t *first = head;
+listint_t *slw = head;
+listint_t *fa = head;
+
 if (!head)
+
 return (NULL);
 
-while (linkedloop && first && first->next)
-
+while (slw && fa && fa->next)
 {
-
-first = first->next->next;
-linkedloop = linkedloop->next;
-
-if (first == linkedloop)
+fa = fa->next->next;
+slw = slw->next;
+if (fa == slw)
 {
-linkedloop = head;
-
-while (linkedloop != first)
+slw = head;
+while (slw != fa)
 {
-linkedloop = linkedloop->next;
-first = first->next;
+slw = slw->next;
+fa = fa->next;
 }
-return (first);
+return (fa);
+}
 }
 
+return (NULL);
 }
+
