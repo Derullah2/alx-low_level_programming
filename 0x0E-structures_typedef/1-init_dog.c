@@ -1,7 +1,4 @@
-#include "stdio.h"
-#include <stdlib.h>
-#include <stdio.h>
-
+#include "stdio..h"
 /**
  * init_dog - initialize a variable of type dog
  * @d: the char to work with in the program
