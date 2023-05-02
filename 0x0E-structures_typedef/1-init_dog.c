@@ -7,6 +7,7 @@
  * @d: the char to work with in the program
  * @name: name of the dog
  * @owner: owner of ther dog
+ * @age: age ot the dog
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
