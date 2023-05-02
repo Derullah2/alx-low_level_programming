@@ -7,15 +7,15 @@
 size_t free_listint_safe(listint_t **h)
 {
 size_t lenth = 0;
-int deff;
+int def;
 listint_t *temp;
 
 if (!h || !*h)
 return (0);
 while (*h)
 {
-deff = *h - (*h)->next;
-if (deff > 0)
+def = *h - (*h)->next;
+if (def > 0)
 {
 temp = (*h)->next;
 free(*h);
