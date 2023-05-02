@@ -52,9 +52,8 @@ return (0);
 }
 
 /**
- * delete_nodeint_at_index - function that delt the nod at index in the program
+ * print_listint_safe - function that prints the nod at index in the program
  * @head: the header to be used in the program
- * @indext: the indext to be deleted
  * Return: 1 if it succeeded else -1 if it failed
  */
 
