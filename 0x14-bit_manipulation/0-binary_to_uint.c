@@ -12,7 +12,7 @@ unsigned int binary_to_uint(const char *b);
 {
 
 	int k;
-	unsigned int velabey = 0;
+	unsigned int dec_val = 0;
 
 	if (!b)
 		return (0);
@@ -21,8 +21,8 @@ unsigned int binary_to_uint(const char *b);
 	{
 		if (b[k] < '0' || b[k] > '1')
 			return (0);
-		velabey = 2 * velabey + (b[k] - '0');
+		dec_val = 2 * dec_val + (b[k] - '0');
 	}
 
-	return (velabey);
+	return (dec_val);
 }
