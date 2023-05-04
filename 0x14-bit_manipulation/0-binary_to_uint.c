@@ -8,11 +8,12 @@
  * Return: 0 or 1 where b is NULL
  */
 
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b)
 {
 
 	int k;
-	unsigned int dec_val = 0;
+
+	unsigned int dval = 0;
 
 	if (!b)
 		return (0);
@@ -21,8 +22,8 @@ unsigned int binary_to_uint(const char *b);
 	{
 		if (b[k] < '0' || b[k] > '1')
 			return (0);
-		dec_val = 2 * dec_val + (b[k] - '0');
+		dval = 2 * dval + (b[k] - '0');
 	}
 
-	return (dec_val);
+	return (dval);
 }
