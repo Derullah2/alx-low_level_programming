@@ -50,7 +50,7 @@ void cpf(char *file_from, char *file_to)
 		error(99, file_to);
 	}
 	do {
-		
+
 		nread = read(fdread, buf, 1024);
 		if (nread < 0)
 			error(98, file_from);
@@ -74,7 +74,7 @@ void cpf(char *file_from, char *file_to)
 }
 
 /**
- * _error - Read file in the program
+ * error - Read file in the program
  * @e: Error number
  * @filename: File name
  */
