@@ -9,14 +9,15 @@
 
 /**
  * read_textfile - function that reads a text file in a file
- * @filname: the file name to be read by the programg and printed out
+ * @filename: the file name to be read by the programg and printed out
  * @letters: letters present in the file
  * Return: NULL or 0
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 
-/* this line of code checks wether the file exist and if it does not exist it creates it and sees if its NULLin char (-1) then returns 0 */
+/* this line of code checks wether the file exist and if it does not exist it*/
+/* creates it and sees if its NULLin char (-1) then returns 0 */
 {
 	int filedestination, contread, contwrite;
 	char *buff_str;
